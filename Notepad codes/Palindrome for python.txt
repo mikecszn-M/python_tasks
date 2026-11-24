@@ -1,0 +1,11 @@
+word = input("Enter any word, word not number: ")
+
+reversed_word = ""
+
+for alphabet in word:
+    reversed_word = alphabet + reversed_word
+
+if word == reversed_word:
+    print(True)
+else:
+    print(False)

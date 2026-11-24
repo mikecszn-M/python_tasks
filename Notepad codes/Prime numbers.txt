@@ -1,0 +1,19 @@
+#Collect figure from the user
+#Let the figure collected not exceed the range of 10 and 30
+#Display all the prime numbers between 2 and figure collected
+
+figure = int(input("Can you please enter a digit between 10 and 30: "))
+
+if figure < 10 or figure > 30:
+    print("Guyy this is not a number from 10 to 30 ! ! !")
+
+else:
+    print(f"Prime numbers between 2 and {figure}:")
+    for number in range(2, figure + 1):
+        prime = True
+        for divisor in range(2, number):
+            if number % divisor == 0:
+                prime = False
+                break
+        if prime:
+            print(number)

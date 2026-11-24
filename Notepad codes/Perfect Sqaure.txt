@@ -1,0 +1,7 @@
+number = int(input("Enter any number: "))
+
+for num in range(2, number+1):
+  num = num ** 2
+  if num > number:
+    break
+  print(num)

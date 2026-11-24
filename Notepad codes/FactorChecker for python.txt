@@ -1,0 +1,14 @@
+#Collect number from the user
+#Check if number is in range
+#when the digit is above 20 and lower than 100 display the factor of digit from 1 to the digit
+
+digit = int(input("Please input a number above 20 and below 100: "))
+
+if digit <= 20 or digit >= 100:
+    print("Please, Let us guided, Input a number above 20 and below 100")
+
+else:
+    print(f"Factors of {digit} are:")
+    for collects in range(1, digit + 1):
+        if digit % collects == 0:
+            print(collects)

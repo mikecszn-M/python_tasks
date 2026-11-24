@@ -1,0 +1,19 @@
+#Collect number from the user
+#Check if it is the same for a stored number btw 9 and 20
+#Let the user be allowed to guess twice and when wrong the the second time let the program end with a "Come back again Jnr Merlin" but if right let it display "Congratulations Merlin"
+
+
+favorite_number = 12
+
+for attempt in range(3):
+    guess = int(input(f"Attempt {attempt} - guess the number my lad, Hint it between 9 - 20: "))
+
+    match guess:
+        case 12:
+            print("Congratulations Merlin")
+        case 10:
+            print("Almost")
+        case 14:
+            print("Ah Ah Koko Below")
+        case _:
+            print("Come back again Jnr Merlin!")
